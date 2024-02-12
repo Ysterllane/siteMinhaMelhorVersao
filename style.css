@@ -1,0 +1,88 @@
+/* CSS (Cascading Style Sheets) */
+
+*{
+    margin: 0.5;
+    padding: 0;
+}
+
+
+body{ /* dentro da tag body */
+
+    background: #000000; /* cor de fundo */
+
+    color:lightpink; /* cor do texto */
+
+    font-family: 'Comic Sans MS', sans-serif; /* estilo da fonte */
+
+    font-size: 16px; /* tamanho da fonte */
+
+    line-height: 1.5; /* ? */
+}
+
+span{
+    background: lightpink; 
+    color: #000;
+    border-radius: 5px;
+}
+
+p{
+    text-align: justify;
+}
+
+main{
+    height: 76vh;
+}
+
+img{
+    margin: auto;
+    display: flex;
+    width: 300px; /* pode ser dada em pixels: px */
+}
+/* .container{
+    display: flex;
+    align-items: center;
+} */
+
+header,footer{
+    background-color:#ffb6c1;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+}
+
+header{
+    background-color: #ffb6c1;
+    font-weight: bold; /* Texto em negrito */
+}
+
+i{
+    border: 1px solid #f8e8d4;
+    padding: 3px;
+    background-color: #f8e8d4;
+    border-radius: 5px;
+}
+
+.botao{
+    
+    background-color:#f8e8d4; /* cor de fundo do botão */
+
+    border-radius: 5px; /* arredondamento */
+
+    color: rgb(0, 0, 0); /* cor de texto do botão */
+
+    font-family: 'Comic Sans MS', sans-serif; /* estilo da fonte */
+
+    font-size: 16px; /* tamanho da fonte */
+
+    border: 1px solid #000000; /* cor da borda */
+    padding: 3px;
+}
+
+.botao:hover{ /* Quando passar o mouse */
+
+    background-color: white;
+    
+    transform: scale(1.2); /* aumenta-se a escala */
+}
