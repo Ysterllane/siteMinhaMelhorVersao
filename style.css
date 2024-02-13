@@ -1,7 +1,8 @@
-/* CSS (Cascading Style Sheets) */
+/* CSS (Cascading Style Sheets) 
 
+   pega todos os elementos da pág*/
 *{
-    margin: 0.5;
+    margin: 1;
     padding: 0;
 }
 
@@ -64,7 +65,8 @@ i{
     border-radius: 5px;
 }
 
-.botao{
+/* config da classe botao, obrigatório uso do (.) */
+.botao{ 
     
     background-color:#f8e8d4; /* cor de fundo do botão */
 
@@ -77,7 +79,8 @@ i{
     font-size: 16px; /* tamanho da fonte */
 
     border: 1px solid #000000; /* cor da borda */
-    padding: 3px;
+
+    padding: 3px; /* ? */
 }
 
 .botao:hover{ /* Quando passar o mouse */
