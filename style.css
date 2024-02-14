@@ -1,91 +1,87 @@
 /* CSS (Cascading Style Sheets) 
 
    pega todos os elementos da pág*/
-*{
-    margin: 1;
+* {
+    /* margin: 1; */
+    margin: 0;
     padding: 0;
 }
 
 
-body{ /* dentro da tag body */
+body {
+    /* dentro da tag body */
 
-    background: #000000; /* cor de fundo */
+    /* Imagem n vai sair do body
+    Faz com que os elementos filhos se ajustem de acordo com o tamanho do elemento pai */
+    box-sizing: border-box;
 
-    color:lightpink; /* cor do texto */
+    height: 100vh;
+    /* altura = 100vh = porção de área visível da tela */
 
-    font-family: 'Comic Sans MS', sans-serif; /* estilo da fonte */
+    width: 100%;
+    /* largura = 100% da tela */
 
-    font-size: 16px; /* tamanho da fonte */
+    background: #000000;
+    /* cor de fundo */
 
-    line-height: 1.5; /* ? */
-}
+    color: lightpink;
+    /* cor do texto */
 
-span{
-    background: lightpink; 
-    color: #000;
-    border-radius: 5px;
-}
+    font-family: 'Comic Sans MS', sans-serif;
+    /* estilo da fonte */
 
-p{
-    text-align: justify;
-}
+    font-size: 16px;
+    /* tamanho da fonte */
 
-main{
-    height: 76vh;
-}
-
-img{
-    margin: auto;
     display: flex;
-    width: 300px; /* pode ser dada em pixels: px */
-}
-/* .container{
-    display: flex;
-    align-items: center;
-} */
 
-header,footer{
-    background-color:#ffb6c1;
-    color: black;
-    display: flex;
+    /* line-height: 1.5; ? */
+
+    /*  posicionar o texto à esquerda e a imagem à direita. */
     justify-content: center;
+
+    /* centralizar os itens verticalmente no container */
     align-items: center;
-    height: 12vh;
+
+
+    /* Deixar o site responsivo = */
+
+    /* ajustar a direção dos itens */
+    flex-direction: column;
+
+    /* permitir que os itens se ajustem e mudem de linha conforme o tamanho da tela */
+    flex-wrap: wrap;
+
 }
 
-header{
-    background-color: #ffb6c1;
-    font-weight: bold; /* Texto em negrito */
+.titulo-destaque,
+i {
+    color: #f8e8d4;
 }
 
-i{
-    border: 1px solid #f8e8d4;
-    padding: 3px;
-    background-color: #f8e8d4;
-    border-radius: 5px;
+.apresentacao {
+    align-items: center;
+    /* Alinhamento de itens no centro */
+
+    /*   justify-content: space-between; ?? */
+
 }
 
-/* config da classe botao, obrigatório uso do (.) */
-.botao{ 
+p {
+    text-align: justify;
+    /* Justifica texto */
+}
+
+img {
+    object-fit: cover;
+    /* Padroniza a imagem pra ela n ficar bugada, como?? */
+
+    width: 300px;
+    /* largura */
+
+    height: 200px;
+    /* altura */
     
-    background-color:#f8e8d4; /* cor de fundo do botão */
-
-    border-radius: 5px; /* arredondamento */
-
-    color: rgb(0, 0, 0); /* cor de texto do botão */
-
-    font-family: 'Comic Sans MS', sans-serif; /* estilo da fonte */
-
-    font-size: 16px; /* tamanho da fonte */
-
-    border: 1px solid #000000; /* cor da borda */
-
-    padding: 3px; /* ? */
-}
-
-.botao:hover{ /* Quando passar o mouse */
-
-    background-color: white;
-    
-    transform: scale(1.2); /* aumenta-se a escala */
+    /*     margin: auto;
+    display: flex; */
 }
