@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
 /* CSS (Cascading Style Sheets) 
 
    pega todos os elementos da pág*/
-* {
-    /* margin: 1; */
+   * {
     margin: 0;
     padding: 0;
 }
+
 
 
 body {
@@ -27,30 +29,8 @@ body {
     color: lightpink;
     /* cor do texto */
 
-    font-family: 'Comic Sans MS', sans-serif;
-    /* estilo da fonte */
-
-    font-size: 16px;
-    /* tamanho da fonte */
-
-    display: flex;
-
-    /* line-height: 1.5; ? */
-
-    /*  posicionar o texto à esquerda e a imagem à direita. */
-    justify-content: center;
-
-    /* centralizar os itens verticalmente no container */
-    align-items: center;
-
-
-    /* Deixar o site responsivo = */
-
-    /* ajustar a direção dos itens */
-    flex-direction: column;
-
-    /* permitir que os itens se ajustem e mudem de linha conforme o tamanho da tela */
-    flex-wrap: wrap;
+    /*font-family: 'Comic Sans MS', sans-serif;
+     estilo da fonte */
 
 }
 
@@ -60,23 +40,22 @@ i {
 }
 
 .apresentacao {
-    align-items: center;
-    /* Alinhamento de itens no centro */
+   
+    margin: 10%;
 
-    /*   justify-content: space-between; ?? */
+    display: flex;
 
-}
+    align-items: center;/* Alinhamento de itens no centro */
 
-p {
-    text-align: justify;
-    /* Justifica texto */
+    justify-content: space-between; /* Espaço entre os elemntos */
+
 }
 
 img {
     object-fit: cover;
     /* Padroniza a imagem pra ela n ficar bugada, como?? */
 
-    width: 300px;
+    width:300px;
     /* largura */
 
     height: 200px;
@@ -84,4 +63,46 @@ img {
     
     /*     margin: auto;
     display: flex; */
+} 
+
+.apresentacao__conteudo{
+
+    width: 615px;
+
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 29px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botao{ 
+    
+    background-color:#f8e8d4; /* cor de fundo do botão */
+
+    border-radius: 5px; /* arredondamento */
+
+    color: rgb(0, 0, 0); /* cor de texto do botão */
+
+    font-family: 'Comic Sans MS', sans-serif; /* estilo da fonte */
+
+    font-size: 14px; /* tamanho da fonte */
+
+    border: 1px solid #000000; /* cor da borda */
+
+    padding: 3px; /* ? */
+
+    
+}
+
+.botao:hover{ /* Quando passar o mouse */
+
+    background-color: white;
+    
+    transform: scale(1.2); /* aumenta-se a escala */
 }
