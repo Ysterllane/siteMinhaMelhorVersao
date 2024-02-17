@@ -41,7 +41,7 @@ i {
 
 .apresentacao {
    
-    margin: 10%;
+    margin: 10% 15%;
 
     display: flex;
 
@@ -66,8 +66,10 @@ img {
 } 
 
 .apresentacao__conteudo{
-
     width: 615px;
+    display:flex;
+    flex-direction: column;
+    gap: 12px;
 
 }
 
@@ -85,19 +87,22 @@ img {
     
     background-color:#f8e8d4; /* cor de fundo do botão */
 
-    border-radius: 5px; /* arredondamento */
+    width: 280px;
+
+    text-align: center;
+
+    border-radius: 16px; /* arredondamento */
+
+    font-size: 16px; /* tamanho da fonte */
+
+    padding: 5px;
+
+    text-decoration: none;
 
     color: rgb(0, 0, 0); /* cor de texto do botão */
 
     font-family: 'Comic Sans MS', sans-serif; /* estilo da fonte */
 
-    font-size: 14px; /* tamanho da fonte */
-
-    border: 1px solid #000000; /* cor da borda */
-
-    padding: 3px; /* ? */
-
-    
 }
 
 .botao:hover{ /* Quando passar o mouse */
@@ -105,4 +110,9 @@ img {
     background-color: white;
     
     transform: scale(1.2); /* aumenta-se a escala */
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
 }
