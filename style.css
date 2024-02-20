@@ -48,8 +48,10 @@ i {
 
 }
 
+
+
 img {
-    object-fit: cover;
+    object-fit:cover;
     /* Padroniza a imagem pra ela n ficar bugada, como?? */
 
     width:300px;
