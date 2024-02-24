@@ -68,7 +68,7 @@ img {
     width: 615px;
     display:flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 12px; /*Espassamento entre os ítens*/
 
 }
 
@@ -77,16 +77,23 @@ img {
     font-family: 'Krona One', sans-serif;
 }
 
-.apresentacao__conteudo__texto{
+.apresentacao__conteudo__paragrafo{
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__conteudo__subtitulo{
+    font-size: 18px;
+    font-family: 'Krona One', sans-serif;
+    text-align: center; /*Alinhamneto do texto: centralizado*/
+   
 }
 
 .botao{ 
     
     background-color:#f8e8d4; /* cor de fundo do botão */
 
-    width: 280px;
+    width: 120px;
 
     text-align: center;
 
@@ -111,7 +118,11 @@ img {
     transform: scale(1.2); /* aumenta-se a escala */
 }
 
-.apresentacao__links{
+.apresentacao__conteudo__links{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+/*     Espessura         cor
+border 2px               #000000*/
