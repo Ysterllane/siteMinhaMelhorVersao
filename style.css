@@ -50,7 +50,7 @@ i {
 
 
 
-img {
+.progress {
     object-fit:cover;
     /* Padroniza a imagem pra ela n ficar bugada, como?? */
 
@@ -90,18 +90,23 @@ img {
 }
 
 .botao{ 
-    
+    display: flex;
+
+    justify-content: center;
+
+    gap: 16px;
+
     background-color:#f8e8d4; /* cor de fundo do botão */
 
-    width: 120px;
+    width: 160px;
 
     text-align: center;
 
     border-radius: 16px; /* arredondamento */
 
-    font-size: 16px; /* tamanho da fonte */
+    font-size: 18px; /* tamanho da fonte */
 
-    padding: 5px;
+    padding: 8px;
 
     text-decoration: none;
 
@@ -116,6 +121,10 @@ img {
     background-color: white;
     
     transform: scale(1.2); /* aumenta-se a escala */
+}
+
+.icon{
+    height: 25px;
 }
 
 .apresentacao__conteudo__links{
