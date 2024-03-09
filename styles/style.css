@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
+:root{
+    --cor-primaria:#000000;
+    --cor-secundaria:#ffaece;
+    --cor-terciaria:#f8e8d4;
+    --cor-houver: white;
+
+    --font-primaria: 'Monserrat', sans-serif;
+    --font-secundaria: 'Krona One', sans-serif;
+}
+
 /* CSS (Cascading Style Sheets)*/
    * {
     margin: 0;
@@ -10,8 +20,8 @@ body {
     /* Imagem n vai sair do body
     Faz com que os elementos filhos se ajustem de acordo com o tamanho do elemento pai */
     box-sizing: border-box;
-    background: #000000;
-    color: #ffaece;
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .cabecalho{
@@ -24,11 +34,11 @@ body {
 }
 
 .cabecalho__menu__links, .nomeDoSite{
-    font-family: 'Monserrat', sans-serif;
+    font-family: var(--font-primaria);
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-    color:#ffaece;
+    color:var(--cor-secundaria);
 }
 
 .cabecalho__menu__links:hover{
@@ -51,21 +61,21 @@ body {
 
 .apresentacao__conteudo__titulo{
     font-size: 29px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--font-secundaria);
 }
 
 .titulo-destaque {
-    color: #f8e8d4;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo__paragrafo{
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-primaria);
 }
 
 .apresentacao__conteudo__subtitulo{
     font-size: 18px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--font-secundaria);
     text-align: center; /*Alinhamneto do texto: centralizado*/
 }
 
@@ -79,7 +89,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    background-color:#f8e8d4;
+    background-color:var(--cor-terciaria);
     width: 140px;
     text-align: center;
     border-radius: 16px; /* arredondamento */
@@ -91,7 +101,7 @@ body {
 }
 
 .botao:hover{ /* Quando passar o mouse */
-    background-color: white;
+    background-color: var(--cor-houver);
     transform: scale(1.2); /* aumenta-se a escala */
 }
 
@@ -106,14 +116,17 @@ body {
 } 
 
 .rodape{
-    background-color: #f8e8d4;
+    background-color: var(--cor-terciaria);
     color:#000000;
     text-align: center;
     padding: 18px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-primaria);
     font-size: 16px;
     font-weight: 600;
 }
 
-/*     Espessura         cor
-border 2px               #000000*/
+.tittle{
+    font-size: 29px;
+    font-family: var(--font-secundaria);
+    color: var(--cor-terciaria);
+}
