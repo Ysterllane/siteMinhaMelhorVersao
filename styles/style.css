@@ -35,7 +35,7 @@ body {
 
 .cabecalho__menu__links, .nomeDoSite{
     font-family: var(--font-primaria);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     color:var(--cor-secundaria);
@@ -53,14 +53,14 @@ body {
 }
 
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display:flex;
     flex-direction: column;
     gap: 12px; /*Espassamento entre os ítens*/
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 29px;
+    font-size: 1.8125rem;
     font-family: var(--font-secundaria);
 }
 
@@ -69,12 +69,12 @@ body {
 }
 
 .apresentacao__conteudo__paragrafo{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: var(--font-primaria);
 }
 
 .apresentacao__conteudo__subtitulo{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: var(--font-secundaria);
     text-align: center; /*Alinhamneto do texto: centralizado*/
 }
@@ -90,10 +90,10 @@ body {
     justify-content: center;
     gap: 16px;
     background-color:var(--cor-terciaria);
-    width: 140px;
+    width: 42%;
     text-align: center;
     border-radius: 16px; /* arredondamento */
-    font-size: 18px; /* tamanho da fonte */
+    font-size: 1.125rem; /* tamanho da fonte */
     padding: 8px;
     text-decoration: none;
     color: rgb(0, 0, 0); /* cor de texto do botão */
@@ -106,13 +106,13 @@ body {
 }
 
 .icon{
-    height: 25px;
+    width: 15%;
 }
 
-.anime {
+.apresentacao__imagem {
     object-fit:cover;/* Padroniza a imagem pra ela n ficar bugada, como?? */
     margin: auto;
-    height: 370px;
+    width: 50%;
 } 
 
 .rodape{
@@ -121,12 +121,14 @@ body {
     text-align: center;
     padding: 18px;
     font-family: var(--font-primaria);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 .tittle{
-    font-size: 29px;
+    font-size:1.8125rem;
     font-family: var(--font-secundaria);
     color: var(--cor-terciaria);
 }
+
+/* 16px= 1rem = responsividade*/
