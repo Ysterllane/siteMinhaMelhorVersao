@@ -132,4 +132,27 @@ body {
     color: var(--cor-terciaria);
 }
 
+/*@media (min-width: 480px ) and (max-width: 800px)*/
+
+@media (max-width: 700px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center; 
+        gap: 30px;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+        gap: 30px;
+    }
+    
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
+
 /* 16px= 1rem = responsividade*/
