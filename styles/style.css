@@ -50,6 +50,7 @@ body {
     display: flex;
     align-items: center;/* Alinhamento de itens no centro */
     justify-content: space-between; /* Espaço entre os elementos */
+    gap: 82px;
 }
 
 .apresentacao__conteudo{
